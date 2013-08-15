@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "adds some convenience helpers and methods for hooking the redirect in a controller"
   s.description = "adds some convenience helpers and methods for hooking the redirect in a controller"
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.markdown"]
 
   s.add_dependency "rails"
 
