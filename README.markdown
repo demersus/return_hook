@@ -1,7 +1,7 @@
 ReturnHook
 ==========
 
-ReturnHook gives you some conveniences for hooking returns from controller redirects. It works by interacting with a url parameter 'return'  (params[:return]). By specifying this parameter, you are able to override the redirect in a controller action to return the user to the url of your choice.
+ReturnHook gives you some conveniences for hooking returns from controller redirects. It works by interacting with a url parameter 'return'  (`params[:return]`). By specifying this parameter, you are able to override the redirect in a controller action to return the user to the url of your choice.
 
 Convenience Methods
 -------------------
@@ -10,7 +10,7 @@ Convenience Methods
 This method is a replacement for redirect_to in your controllers.  It takes the same parameters, but is aware of any pending return hooks.  If it detects `params[:return]`, then it will redirect to the url specified under `params[:return]`, instead of the one given to it in it's first parameter.
 
 ##### Example:
-You have accessed a controller action with ?return=/your-url.  At the end of your action you write:  `smart_redirect(users_path)`.  Because ?return=/your-url is present in your calling url, it will redirect to /your-url instead of users_path.  Otherwise it will follow the same semantics of redirect_to
+You have accessed a controller action with `?return=/your-url`.  At the end of your action you write:  `smart_redirect(users_path)`.  Because `?return=/your-url` is present in your calling url, it will redirect to `/your-url` instead of `users_path`.  Otherwise it will follow the same semantics of `redirect_to`.
 
 ### url_for_return
 This method is available to both controllers and views.  It takes a url_for argument, and adds a return parameter equal to the present url.
