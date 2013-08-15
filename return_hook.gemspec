@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = ReturnHook::VERSION
   s.authors     = ["Nik Petersen"]
   s.email       = ["demersus@gmail.com"]
-  s.homepage    = "TODO"
+  s.homepage    = "https://github.com/demersus/return_hook"
   s.summary     = "adds some convenience helpers and methods for hooking the redirect in a controller"
   s.description = "adds some convenience helpers and methods for hooking the redirect in a controller"
 
