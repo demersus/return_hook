@@ -6,6 +6,7 @@ require "return_hook/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "return_hook"
+	s.license     = 'MIT'
   s.version     = ReturnHook::VERSION
   s.authors     = ["Nik Petersen"]
   s.email       = ["demersus@gmail.com"]
