@@ -32,6 +32,7 @@ If you would like to have respond_with at the end of your controller methods, an
 
 ###### lib/app_responder.rb
 ```ruby
+  require 'return_hook'
   class AppResponder < ActionController::Responder
     include ReturnHook::Responder
   end
